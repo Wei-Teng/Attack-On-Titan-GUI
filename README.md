@@ -1,6 +1,8 @@
 # Attack On Titan GUI
+
 **This project is created as a part of the assignment project under
 the UM WIA1002/WIB1002 Data Structure class.**
+
 ---
 
 **Group Members**
@@ -8,12 +10,14 @@ the UM WIA1002/WIB1002 Data Structure class.**
 - Hong Kae Ren U2102850
 - Ng Xian Heng U2102855
 - Tan Zhi Jian U2102832
+
 ---
 
 **Prerequisite**
 - Maven
 - Java 16
 - MySQL server that hosts the attack on titan database.
+
 ---
 
 **Built With**
@@ -22,7 +26,6 @@ the UM WIA1002/WIB1002 Data Structure class.**
 - MySQL JDBC Driver Connector - For connecting with the MySQL
   server
 - MySQL - MySQL database
----
 
 
 
