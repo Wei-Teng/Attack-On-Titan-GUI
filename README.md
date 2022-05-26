@@ -1,5 +1,4 @@
 # Attack On Titan GUI
-
 This project is created as a part of the assignment project under
 the UM WIA1002/WIB1002 Data Structure class.
 ---
