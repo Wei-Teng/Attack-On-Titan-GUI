@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="beige-bg-color" stylesheets="@../../../../stylesheet/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.worldoftitan.AddCharacterController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="1920.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints minHeight="0.0" prefHeight="180.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="0.0" prefHeight="900.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="1920.0" GridPane.rowIndex="2">
+         <children>
+            <ImageView fx:id="designImageView1" fitHeight="556.0" fitWidth="844.0" layoutX="30.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.5;">
+               <image>
+                  <Image url="@../../../../../../Images/aot_trio_cute.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="designImageView2" fitHeight="815.0" fitWidth="905.0" layoutX="980.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.5;">
+               <image>
+                  <Image url="@../../../../../../Images/levi_cleaner.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="600.0" layoutY="420.0" prefHeight="100.0" prefWidth="220.0" text="Intelligence:">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label layoutX="600.0" layoutY="580.0" prefHeight="100.0" prefWidth="220.0" text="Leadership:">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label layoutX="600.0" layoutY="500.0" prefHeight="100.0" prefWidth="240.0" text="Coordination:">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label layoutX="600.0" layoutY="340.0" prefHeight="100.0" prefWidth="180.0" text="Agility:">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label layoutX="600.0" layoutY="260.0" prefHeight="100.0" prefWidth="200.0" text="Strength:">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label layoutX="600.0" layoutY="180.0" prefHeight="100.0" prefWidth="220.0" text="Weight (Kg):">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label layoutX="600.0" layoutY="100.0" prefHeight="100.0" prefWidth="220.0" text="Height (cm):">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Button alignment="CENTER" layoutX="700.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#btnCancelClicked" prefHeight="50.0" prefWidth="150.0" style="-fx-background-radius: 10;" styleClass="lightbrown-bg-color" stylesheets="@../../../../stylesheet/style.css" text="Cancel" textFill="#403535">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="600.0" layoutY="20.0" prefHeight="100.0" prefWidth="120.0" text="Name:">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <TextField fx:id="nameTextField" layoutX="1000.0" layoutY="30.0" prefHeight="50.0" prefWidth="488.0" promptText="Name" style="-fx-background-radius: 10;" styleClass="alice-blue-bg-color" stylesheets="@../../../../stylesheet/style.css">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="heightTextField" layoutX="1000.0" layoutY="110.0" prefHeight="50.0" prefWidth="488.0" promptText="Height (cm)" style="-fx-background-radius: 10;" styleClass="alice-blue-bg-color" stylesheets="@../../../../stylesheet/style.css">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="weightTextField" layoutX="1000.0" layoutY="190.0" prefHeight="50.0" prefWidth="488.0" promptText="Weight (Kg)" style="-fx-background-radius: 10;" styleClass="alice-blue-bg-color" stylesheets="@../../../../stylesheet/style.css">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="strengthTextField" layoutX="1000.0" layoutY="270.0" prefHeight="50.0" prefWidth="488.0" promptText="Strength" style="-fx-background-radius: 10;" styleClass="alice-blue-bg-color" stylesheets="@../../../../stylesheet/style.css">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="agilityTextField" layoutX="1000.0" layoutY="350.0" prefHeight="50.0" prefWidth="488.0" promptText="Agility" style="-fx-background-radius: 10;" styleClass="alice-blue-bg-color" stylesheets="@../../../../stylesheet/style.css">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="intelligenceTextField" layoutX="1000.0" layoutY="430.0" prefHeight="50.0" prefWidth="488.0" promptText="Intelligence" style="-fx-background-radius: 10;" styleClass="alice-blue-bg-color" stylesheets="@../../../../stylesheet/style.css">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="coordinationTextField" layoutX="1000.0" layoutY="510.0" prefHeight="50.0" prefWidth="488.0" promptText="Coordination" style="-fx-background-radius: 10;" styleClass="alice-blue-bg-color" stylesheets="@../../../../stylesheet/style.css">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="leadershipTextField" layoutX="1000.0" layoutY="590.0" prefHeight="50.0" prefWidth="488.0" promptText="Leadership" style="-fx-background-radius: 10;" styleClass="alice-blue-bg-color" stylesheets="@../../../../stylesheet/style.css">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button alignment="CENTER" layoutX="1100.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#btnSaveClicked" prefHeight="50.0" prefWidth="150.0" style="-fx-background-radius: 10;" styleClass="lightbrown-bg-color" stylesheets="@../../../../stylesheet/style.css" text="Save" textFill="#403535">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="characterImageView" fitHeight="303.0" fitWidth="305.0" layoutX="100.0" onMouseClicked="#characterImageViewClicked" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../Images/no_photo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="180.0" prefWidth="1920.0" GridPane.rowIndex="1">
+         <children>
+            <Label alignment="CENTER" layoutX="685.0" prefHeight="100.0" prefWidth="550.0" text="Character Information" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="48.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

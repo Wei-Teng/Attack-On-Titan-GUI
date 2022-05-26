@@ -1,0 +1,23 @@
+.bg-image-blur {
+    -fx-background-image: url("file:/C:/Users/Admin/IdeaProjects/WorldOfTitan/Images/attack_on_titan_blur.jpg");
+    -fx-background-size: 1920px 1080px;
+    -fx-background-repeat: no-repeat;
+}
+
+.bg-image-clear {
+    -fx-background-image: url("file:/C:/Users/Admin/IdeaProjects/WorldOfTitan/Images/attack_on_titan_clear.jpg");
+    -fx-background-size: 1920px 1080px;
+    -fx-background-repeat: no-repeat;
+}
+
+.beige-bg-color {
+    -fx-background-color: #FFECCF;
+}
+
+.lightbrown-bg-color {
+    -fx-background-color: #D2C4AE;
+}
+
+.alice-blue-bg-color {
+    -fx-background-color: #F0F8FF;
+}
