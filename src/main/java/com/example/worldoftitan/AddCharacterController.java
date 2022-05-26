@@ -67,7 +67,6 @@ public class AddCharacterController implements Initializable {
         if (isValidInput()) {
             Character character = setUpCharacter();
             Sql sql = new Sql();
-            sql.createCharacterTableIfNotExist();
             sql.saveCharacter(character);
             AlertContainer.showInformationAlert("Character saved!!!");
             CharacterController.characters = new Sql().getAllCharacter();

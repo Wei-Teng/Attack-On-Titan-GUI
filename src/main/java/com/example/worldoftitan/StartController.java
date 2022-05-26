@@ -1,10 +1,20 @@
 package com.example.worldoftitan;
 
+import com.example.worldoftitan.sql.Sql;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 
-public class StartController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class StartController implements Initializable {
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        new Sql().createCharacterTableIfNotExist();
+    }
 
     @FXML
     void btnBestPathClicked(MouseEvent event) {
