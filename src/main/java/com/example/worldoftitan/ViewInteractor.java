@@ -20,7 +20,7 @@ public class ViewInteractor {
     private static void tryToOpenScene(String fxmlFileName) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFileName));
         Scene scene = new Scene(fxmlLoader.load());
-        scene.getStylesheets().add("file:/C:/Users/Admin/IdeaProjects/WorldOfTitan/src/main/stylesheet/style.css");
+        scene.getStylesheets().add("file:/C:/Users/Jay%20Tan/IdeaProjects/Attack-On-Titan-GUI/src/main/stylesheet/style.css");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
