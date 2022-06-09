@@ -1,11 +1,11 @@
 .bg-image-blur {
-    -fx-background-image: url("file:/C:/Users/Admin/IdeaProjects/WorldOfTitan/Images/attack_on_titan_blur.jpg");
+    -fx-background-image: url("file:/C:/Users/Jay%20Tan/IdeaProjects/Attack-On-Titan-GUI/Images/attack_on_titan_blur.jpg");
     -fx-background-size: 1920px 1080px;
     -fx-background-repeat: no-repeat;
 }
 
 .bg-image-clear {
-    -fx-background-image: url("file:/C:/Users/Admin/IdeaProjects/WorldOfTitan/Images/attack_on_titan_clear.jpg");
+    -fx-background-image: url("file:/C:/Users/Jay%20Tan/IdeaProjects/Attack-On-Titan-GUI/Images/attack_on_titan_clear.jpg");
     -fx-background-size: 1920px 1080px;
     -fx-background-repeat: no-repeat;
 }
@@ -20,4 +20,27 @@
 
 .alice-blue-bg-color {
     -fx-background-color: #F0F8FF;
+}
+
+.sm-label-bg {
+	-fx-background-color: #6F553F;
+    -fx-background-radius: 20px;
+}
+
+.button{
+    -fx-background-color: #FFECCF;
+    -fx-background-radius: 20px;
+    -fx-font-size: 30px;
+    -fx-font-family: "Inter";
+    -fx-font-style: normal;
+    -fx-text-fill: #403535;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+.text-area{
+    -fx-control-inner-background: #D2C4AE;
+    -fx-font-family: "Lucida Console";
+    -fx-font-size: 25px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+
 }

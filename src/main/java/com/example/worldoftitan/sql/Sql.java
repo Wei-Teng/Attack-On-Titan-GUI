@@ -31,7 +31,7 @@ public class Sql {
                     "  intelligence INT NOT NULL,\n" +
                     "  coordination INT NOT NULL,\n" +
                     "  leadership INT NOT NULL,\n" +
-                    "  image VARCHAR(100) NOT NULL,\n" +
+                    "  image VARCHAR(1000) NOT NULL,\n" +
                     "  PRIMARY KEY (id),\n" +
                     "  UNIQUE INDEX name_UNIQUE (name ASC) VISIBLE)";
             Statement statement = connection.createStatement();
