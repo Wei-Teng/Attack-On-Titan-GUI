@@ -18,7 +18,7 @@ public class StartController implements Initializable {
 
     @FXML
     void btnBestPathClicked(MouseEvent event) {
-
+        ViewInteractor.openScene("BestPath.fxml");
     }
 
     @FXML
@@ -43,7 +43,7 @@ public class StartController implements Initializable {
 
     @FXML
     void btnScoutingMissionClicked(MouseEvent event) {
-
+        ViewInteractor.openScene("HamiltonianCycle.fxml");
     }
 
     @FXML
