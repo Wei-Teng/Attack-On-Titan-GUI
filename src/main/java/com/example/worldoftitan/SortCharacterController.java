@@ -25,10 +25,10 @@ public class SortCharacterController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        File picture1 = new File("file:/Images/aot_trio_cute.jpg");
+        File picture1 = new File("src\\Images\\aot_trio_cute.jpg");
         designImageView1.setImage(new Image(picture1.toURI().toString()));
 
-        File picture2 = new File("file:/Images/levi_cleaner.jpg");
+        File picture2 = new File("src\\Images\\levi_cleaner.jpg");
         designImageView2.setImage(new Image(picture2.toURI().toString()));
         attributeChoiceBox.setItems(FXCollections.observableArrayList("Height", "Weight", "Strength",
                 "Agility", "Intelligence", "Coordination", "Leadership"));

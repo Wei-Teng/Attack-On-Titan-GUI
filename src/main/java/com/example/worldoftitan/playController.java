@@ -228,9 +228,9 @@ public class playController implements Initializable {
         clip.setArcWidth(50);
         mapView.setClip(clip);
 
-        mapView.setImage(new Image("file:/C:/Users/e-hen/Downloads/Y1S2/DS/map.jpg"));
-        pathView.setImage(new Image("file:/C:/Users/e-hen/Downloads/Y1S2/DS/straightPaths.png"));
-        soldierImage.setImage(new Image("file:/C:/Users/e-hen/Downloads/Y1S2/DS/Pictures/ErenYeager.png"));
+        mapView.setImage(new Image("file:src/main/resources/com/example/worldoftitan/Images/map.jpg"));
+        pathView.setImage(new Image("file:src/main/resources/com/example/worldoftitan/Images/straightPaths.png"));
+        soldierImage.setImage(new Image("file:src/main/resources/com/example/worldoftitan/Images/ErenYeager.png"));
 
         //initialize the graph
         graphInitializer();
@@ -432,9 +432,9 @@ public class playController implements Initializable {
     private void displayTitan(Titan titan){
         int position = titan.getPosition();
         String buttonStyle;
-        if(titan.getType().equals("Normal")) buttonStyle = "-fx-background-image: url('file:/C:/Users/e-hen/Downloads/Y1S2/DS/Pictures/normal.jpg');-fx-background-size: cover;";
-        else if(titan.getType().equals("Abnormal")) buttonStyle = "-fx-background-image: url('file:/C:/Users/e-hen/Downloads/Y1S2/DS/Pictures/abnormal.png');-fx-background-size: cover;";
-        else buttonStyle = "-fx-background-image: url('file:/C:/Users/e-hen/Downloads/Y1S2/DS/Pictures/NineTitans.png');-fx-background-size: cover;";
+        if(titan.getType().equals("Normal")) buttonStyle = "-fx-background-image: url('file:src/main/resources/com/example/worldoftitan/Images/normal.jpg');-fx-background-size: cover;";
+        else if(titan.getType().equals("Abnormal")) buttonStyle = "-fx-background-image: url('file:src/main/resources/com/example/worldoftitan/Images/abnormal.png');-fx-background-size: cover;";
+        else buttonStyle = "-fx-background-image: url('file:src/main/resources/com/example/worldoftitan/Images/NineTitans.png');-fx-background-size: cover;";
         recolourButton(position,buttonStyle);
     }
 

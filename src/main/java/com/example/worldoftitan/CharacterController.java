@@ -100,17 +100,17 @@ public class CharacterController implements Initializable {
     }
 
     private Button setUpRemoveButton(Character character) {
-        Button removeButton = new Button("Remove");
+        Button removeButton = new Button("Del");
         removeButton.setOnAction(e -> {
             new Sql().removeCharacter(character.getName());
             characters.remove(character);
             ViewInteractor.openScene("character.fxml");
         });
         removeButton.setCursor(Cursor.HAND);
-        removeButton.setPrefSize(75, 75);
-        removeButton.setStyle("-fx-background-radius: 37.5px;");
-        removeButton.setLayoutX(1200);
-        removeButton.setLayoutY(62.5);
+        removeButton.setPrefSize(100, 100);
+        removeButton.setStyle("-fx-background-radius: 50px;");
+        removeButton.setLayoutX(1100);
+        removeButton.setLayoutY(48.5);
         return removeButton;
     }
 

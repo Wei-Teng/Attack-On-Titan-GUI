@@ -54,7 +54,7 @@
               </BorderPane>
           </children>
       </AnchorPane>
-      <VBox fx:id="popUp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" prefWidth="558.0" styleClass="pop-up-background" stylesheets="@../../../../stylesheet/style.css" visible="false">
+      <VBox fx:id="popUp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" prefWidth="558.0" styleClass="pop-up-background" stylesheets="@../../../../stylesheet/style.css">
          <children>
             <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
@@ -83,9 +83,9 @@
             </HBox>
          </children>
       </VBox>
-      <AnchorPane fx:id="anchorPane2" stylesheets="@../../../../stylesheet/style.css" visible="false" StackPane.alignment="CENTER">
+      <AnchorPane fx:id="anchorPane2" stylesheets="@../../../../stylesheet/style.css" StackPane.alignment="CENTER">
          <children>
-            <BorderPane layoutX="408.0" layoutY="305.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="70.0">
+            <BorderPane layoutX="408.0" layoutY="305.0" stylesheets="@../../../../stylesheet/style.css" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="70.0">
                <top>
                   <HBox BorderPane.alignment="CENTER">
                      <children>
@@ -172,7 +172,7 @@
             </BorderPane>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="finalPane" prefHeight="200.0" prefWidth="1244.0" visible="false" StackPane.alignment="CENTER">
+      <AnchorPane fx:id="finalPane" prefHeight="200.0" prefWidth="1244.0" StackPane.alignment="CENTER">
          <children>
             <VBox alignment="CENTER" layoutX="764.0" layoutY="423.0" prefHeight="285.0" prefWidth="476.0" styleClass="pop-up-background" stylesheets="@../../../../stylesheet/style.css" AnchorPane.topAnchor="423.0">
                <children>

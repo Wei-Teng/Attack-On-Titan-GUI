@@ -44,7 +44,7 @@ public class WallOfMariaController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        File file = new File("C:/Users/e-hen/IdeaProjects/Attack-On-Titan-GUI/src/Images/tumblr_d1dd0be33d03e1f698d686c3ef7458eb_de90693b_540.jpg");
+        File file = new File("src/Images/tumblr_d1dd0be33d03e1f698d686c3ef7458eb_de90693b_540.jpg");
         imageWallofMaria.setImage(new Image(file.toURI().toString()));
     }
 

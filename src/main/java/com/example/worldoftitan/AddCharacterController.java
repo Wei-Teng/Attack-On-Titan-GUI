@@ -1,7 +1,7 @@
 package com.example.worldoftitan;
 
 import com.example.worldoftitan.sql.Sql;
-//import javafx.embed.swing.SwingFXUtils;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
@@ -47,13 +47,13 @@ public class AddCharacterController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        File defaultCharacterPicture = new File("/Images/no_photo.png");
+        File defaultCharacterPicture = new File("src\\main\\resources\\com\\example\\worldoftitan\\Images\\no_photo.png");
         characterImageView.setImage(new Image(defaultCharacterPicture.toURI().toString()));
 
-        File picture1 = new File("/Images/aot_trio_cute.jpg");
+        File picture1 = new File("src\\Images\\aot_trio_cute.jpg");
         designImageView1.setImage(new Image(picture1.toURI().toString()));
 
-        File picture2 = new File("/Images/levi_cleaner.jpg");
+        File picture2 = new File("src\\Images\\levi_cleaner.jpg");
         designImageView2.setImage(new Image(picture2.toURI().toString()));
     }
 
@@ -77,6 +77,10 @@ public class AddCharacterController implements Initializable {
     private boolean isValidInput() {
         try {
             LinkedList<Character> characters = new Sql().getAllCharacter();
+            for (Character c : characters) {
+                if (c.getName().equals(nameTextField.getText().trim()))
+                    throw new Exception();
+            }
             Integer.parseInt(heightTextField.getText().trim());
             Integer.parseInt(weightTextField.getText().trim());
             int strength = Integer.parseInt(strengthTextField.getText().trim());
@@ -86,7 +90,7 @@ public class AddCharacterController implements Initializable {
             int leadership = Integer.parseInt(leadershipTextField.getText().trim());
             if (selectedImagePath == null || strength <= 0 || strength > 15 || agility <= 0 || agility > 15 ||
                     intelligence <= 0 || intelligence > 15 || coordination <= 0 || coordination > 15 ||
-                    leadership <= 0 || leadership > 15 || characters.contains(nameTextField.getText().trim()))
+                    leadership <= 0 || leadership > 15)
                 throw new Exception();
             return true;
         } catch (Exception e) {
@@ -132,8 +136,8 @@ public class AddCharacterController implements Initializable {
         try {
             selectedImagePath = picturePath.toString().replace("\\", "/");
             BufferedImage bufferedImage = ImageIO.read(picturePath);
-//            Image image = SwingFXUtils.toFXImage(bufferedImage, null);
-//            characterImageView.setImage(image);
+            Image image = SwingFXUtils.toFXImage(bufferedImage, null);
+            characterImageView.setImage(image);
         } catch (IOException e) {
             AlertContainer.showWarningAlert("It is not a valid image.");
         }
