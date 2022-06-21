@@ -12,8 +12,7 @@ import java.util.ResourceBundle;
 public class StartController implements Initializable {
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        new Sql().createCharacterTableIfNotExist();
+    public void initialize(URL url, ResourceBundle resourceBundle) {new Sql().createCharacterTableIfNotExist();
     }
 
     @FXML
@@ -38,7 +37,7 @@ public class StartController implements Initializable {
 
     @FXML
     void btnPlayClicked(MouseEvent event) {
-
+        ViewInteractor.openScene("play.fxml");
     }
 
     @FXML

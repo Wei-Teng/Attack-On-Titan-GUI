@@ -1,10 +1,10 @@
 .bg-image-blur {
-    -fx-background-image: url("file:/C:/Users/user/Documents/IntellijProjects/WIA%201002%20Data%20Structure/Attack-On-Titan-GUI/src/Images/attack_on_titan_blur.jpg");
-    -fx-background-size: cover;
+    -fx-background-image: url("file:/C:/Users/e-hen/IdeaProjects/Attack-On-Titan-GUI/src/Images/attack_on_titan_blur.jpg");
+    -fx-background-size: cover
 }
 
 .bg-image-clear {
-    -fx-background-image: url("file:/C:/Users/user/Documents/IntellijProjects/WIA%201002%20Data%20Structure/Attack-On-Titan-GUI/src/Images/attack_on_titan_clear.jpg");
+    -fx-background-image: url("file:/C:/Users/e-hen/IdeaProjects/Attack-On-Titan-GUI/src/Images/attack_on_titan_clear.jpg");
     -fx-background-size: cover;
 }
 
@@ -18,6 +18,127 @@
 
 .alice-blue-bg-color {
     -fx-background-color: #F0F8FF;
+}
+
+.play{
+    -fx-background-image: url('file:/C:/Users/e-hen/IdeaProjects/Attack-On-Titan-GUI/Images/attack_on_titan_blur.jpg');
+    -fx-background-size: cover;
+}
+
+.button_play{
+    -fx-background-color: #FFECCF;
+    -fx-background-radius: 20px;
+    -fx-font-size: 30px;
+    -fx-font-family: "Inter";
+    -fx-font-style: normal;
+    -fx-text-fill: #403535;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+.label_play{
+    -fx-background-color: #6F553F;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20px;
+    -fx-background-radius: 20px;
+}
+
+.pop-up-background{
+    -fx-background-color: #FFECCF;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+.pop-up-button{
+    -fx-background-color: #6F553F;
+    -fx-background-radius: 20px;
+    -fx-font-size: 15px;
+    -fx-font-family: "Inter";
+    -fx-font-style: normal;
+    -fx-text-fill: #FFECCF;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+.pop-up-label{
+    -fx-text-fill: #403535;
+    -fx-font-size: 20px;
+}
+
+.pop-up-text-field{
+    -fx-background-color: #D2C4AE;
+    -fx-background-radius: 20px;
+    -fx-font-size: 18px;
+    -fx-font-family: "Inter";
+    -fx-font-style: normal;
+    -fx-text-fill: #403535;
+}
+
+.play-display .content{
+    -fx-background-color: #D2C4AE;
+    -fx-font-size: 15px;
+    -fx-font-family: "Inter";
+    -fx-font-style: normal;
+    -fx-text-fill: #403535;
+    -fx-background-radius: 15px;
+}
+
+.play-display{
+    -fx-background-color: #D2C4AE;
+    -fx-font-size: 15px;
+    -fx-font-family: "Inter";
+    -fx-font-style: normal;
+    -fx-text-fill: #403535;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+#sequenceDisplay .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+#sequenceDisplay .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+#sequenceDisplay .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+#titanDisplay .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+#titanDisplay .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+#titanDisplay .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+#finalText .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+#finalText .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+#finalText .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.play-node-button{
+    -fx-background-color: #457439;
+    -fx-background-radius: 100px;
+    -fx-font-size: 20px;
+    -fx-font-family: "Inter";
+    -fx-font-style: normal;
+    -fx-text-fill: #FFECCF;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
 }
 
 .text-area{
@@ -61,31 +182,31 @@
 
 .tab{
     -fx-background-color:
-               linear-gradient(#FFECCF, #D2C4AE),
-               radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
-       -fx-background-radius: 6,5;
-       -fx-background-insets: 0,1;
+            linear-gradient(#FFECCF, #D2C4AE),
+            radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
 
-       -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
-      -fx-text-fill: #395306;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
 }
 
 .tab:hover
 {
-      -fx-background-color:
-                 linear-gradient(#FFECCF, #D2C4AE),
-                 radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
-         -fx-background-radius: 6,5;
-         -fx-background-insets: 0,1;
+    -fx-background-color:
+            linear-gradient(#FFECCF, #D2C4AE),
+            radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
 
-         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
-        -fx-text-fill: #395306;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
 }
 
 .tab:pressed
 {
-     -fx-padding: 10 15 13 15;
-     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
 
 }
 
@@ -117,90 +238,90 @@
 
 #confirmLayersButton{
     -fx-background-color:
-               linear-gradient(#FFECCF, #D2C4AE),
-               radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
-       -fx-background-radius: 6,5;
-       -fx-background-insets: 0,1;
+            linear-gradient(#FFECCF, #D2C4AE),
+            radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
 
-       -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
-      -fx-text-fill: #395306;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
 }
 
 #confirmLayersButton:hover
 {
-      -fx-background-color:
-                 linear-gradient(#FFECCF, #D2C4AE),
-                 radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
-         -fx-background-radius: 6,5;
-         -fx-background-insets: 0,1;
+    -fx-background-color:
+            linear-gradient(#FFECCF, #D2C4AE),
+            radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
 
-         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
-        -fx-text-fill: #395306;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
 }
 
 #confirmLayersButton:pressed
 {
-     -fx-padding: 10 15 13 15;
-     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
 
 }
 
 #nextButton{
     -fx-background-color:
-               linear-gradient(#FFECCF, #D2C4AE),
-               radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
-       -fx-background-radius: 6,5;
-       -fx-background-insets: 0,1;
+            linear-gradient(#FFECCF, #D2C4AE),
+            radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
 
-       -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
-      -fx-text-fill: #395306;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
 }
 
 #nextButton:hover
 {
-      -fx-background-color:
-                 linear-gradient(#FFECCF, #D2C4AE),
-                 radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
-         -fx-background-radius: 6,5;
-         -fx-background-insets: 0,1;
+    -fx-background-color:
+            linear-gradient(#FFECCF, #D2C4AE),
+            radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
 
-         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
-        -fx-text-fill: #395306;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
 }
 
 #nextButton:pressed
 {
-     -fx-padding: 10 15 13 15;
-     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
 
 }
 
 #weakestPartButton{
     -fx-background-color:
-               linear-gradient(#FFECCF, #D2C4AE),
-               radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
-       -fx-background-radius: 6,5;
-       -fx-background-insets: 0,1;
+            linear-gradient(#FFECCF, #D2C4AE),
+            radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
 
-       -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
-      -fx-text-fill: #395306;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
 }
 
 #weakestPartButton:hover
 {
-      -fx-background-color:
-                 linear-gradient(#FFECCF, #D2C4AE),
-                 radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
-         -fx-background-radius: 6,5;
-         -fx-background-insets: 0,1;
+    -fx-background-color:
+            linear-gradient(#FFECCF, #D2C4AE),
+            radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
 
-         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
-        -fx-text-fill: #395306;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
 }
 
 #weakestPartButton:pressed
 {
-     -fx-padding: 10 15 13 15;
-     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
 
 }

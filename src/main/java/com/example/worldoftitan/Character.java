@@ -1,5 +1,8 @@
 package com.example.worldoftitan;
 
+
+import javafx.scene.control.Button;
+
 public class Character {
 
     private String name;
@@ -11,6 +14,7 @@ public class Character {
     private int coordination;
     private int leadership;
     private String imagePath;
+    private Button plusButton;
 
     public Character(String name, int height, int weight, int strength, int agility,
                      int intelligence, int coordination, int leadership, String imagePath) {
@@ -59,5 +63,24 @@ public class Character {
 
     public String getImagePath() {
         return imagePath;
+    }
+
+    public void setCharButton(Button button){
+        this.plusButton = button;
+    }
+
+    @Override
+    public String toString() {
+        return name + "\n" +
+                "• Height: " + height + "\n" +
+                "• Weight: " + weight + "\n" +
+                "• Strength: " + strength + "\n" +
+                "• Agility: " + agility + "\n";
+    }
+
+    public String toString2(){
+        return "• Intelligence: " + intelligence + "\n" +
+                "• Coordination: " + coordination + "\n" +
+                "• Leadership: " + leadership + "\n";
     }
 }

@@ -20,11 +20,11 @@ public class SqlConnector {
         }
     }
 
-    private static void tryToConnect() throws SQLException, ClassNotFoundException {
+    private static void tryToConnect() throws SQLException {
         String databaseName = "attack_on_titan";
-        String url = "jdbc:mysql://localhost:3306/" + databaseName;
+        String url = "jdbc:mysql://localhost/" + databaseName;
         String username = "root";
-        String password = "password";
+        String password = "root";
         connection = DriverManager.getConnection(url, username, password);
     }
 }
