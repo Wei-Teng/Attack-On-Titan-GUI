@@ -24,7 +24,7 @@ public class SqlConnector {
         String databaseName = "attack_on_titan";
         String url = "jdbc:mysql://localhost:3306/" + databaseName;
         String username = "root";
-        String password = "Jaytan1234";
+        String password = "password";
         connection = DriverManager.getConnection(url, username, password);
     }
 }
