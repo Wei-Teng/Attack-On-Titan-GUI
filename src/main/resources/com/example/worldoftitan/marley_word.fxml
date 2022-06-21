@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" styleClass="bg-image-blur" stylesheets="@../../../../stylesheet/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.worldoftitan.MarleyWordController">
+   <children>
+      <TabPane layoutX="100.0" layoutY="92.0" tabMinHeight="50.0" tabMinWidth="10.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+         <tabs>
+            <Tab closable="false" text="Marley Word Converter">
+               <content>
+                  <BorderPane prefHeight="1080.0" prefWidth="1920.0" styleClass="beige-bg-color" stylesheets="@../../../../stylesheet/style.css">
+                     <center>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <center>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="420.0" prefWidth="113.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="marleyWordLabel" alignment="TOP_CENTER" prefHeight="46.0" prefWidth="181.0" styleClass="alice-blue-bg-color" stylesheets="@../../../../stylesheet/style.css" text="Marley">
+                                             <font>
+                                                <Font name="System Bold Italic" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="marleyTextArea" prefHeight="301.0" prefWidth="525.0" stylesheets="@../../../../stylesheet/style.css" VBox.vgrow="ALWAYS">
+                                             <VBox.margin>
+                                                <Insets bottom="50.0" left="30.0" right="30.0" top="10.0" />
+                                             </VBox.margin>
+                                          </TextArea>
+                                       </children>
+                                    </VBox>
+                                    <Label text="&gt;&gt;">
+                                       <font>
+                                          <Font name="System Bold" size="35.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="paradisWordLabel" alignment="TOP_CENTER" prefHeight="46.0" prefWidth="180.0" text="Paradis">
+                                             <font>
+                                                <Font name="System Bold Italic" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="paradisTextArea" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <VBox.margin>
+                                                <Insets bottom="50.0" left="30.0" right="30.0" top="10.0" />
+                                             </VBox.margin>
+                                          </TextArea>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </center>
+                           <bottom>
+                              <Button fx:id="convertButton" mnemonicParsing="false" onMouseClicked="#convert" prefHeight="51.0" prefWidth="182.0" styleClass="beige-bg-color" stylesheets="@../../../../stylesheet/style.css" text="Convert" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="20.0" />
+                                 </BorderPane.margin>
+                              </Button>
+                           </bottom>
+                        </BorderPane>
+                     </center>
+                     <top>
+                        <Label fx:id="labelTitleMarleyWord" alignment="CENTER" prefHeight="182.0" prefWidth="613.0" text="Marley Word Converter" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+                     </top>
+                  </BorderPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Cipher Text Encryption">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="beige-bg-color" stylesheets="@../../../../stylesheet/style.css">
+                     <children>
+                        <Button layoutX="472.0" layoutY="685.0" mnemonicParsing="false" onAction="#encryptButton" prefHeight="33.0" prefWidth="149.0" text="Encrypt" />
+                        <HBox layoutX="33.0" layoutY="187.0" prefHeight="534.0" prefWidth="1658.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <HBox prefHeight="212.0" prefWidth="829.0">
+                                       <children>
+                                          <Label fx:id="labelOriginalText" alignment="CENTER" prefHeight="222.0" prefWidth="250.0" text="Original Text :" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold Italic" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="originalTextArea" prefHeight="218.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </HBox.margin>
+                                          </TextArea>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="220.0" prefWidth="829.0">
+                                       <children>
+                                          <Label fx:id="labelEncryptedText" alignment="CENTER" prefHeight="321.0" prefWidth="250.0" text="Encrypted Text :" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold Italic" size="30.0" />
+                                             </font></Label>
+                                          <TextArea fx:id="encryptedTextArea_1" prefHeight="180.0" prefWidth="578.0" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets top="20.0" />
+                                             </HBox.margin>
+                                          </TextArea>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <HBox prefHeight="220.0" prefWidth="829.0">
+                                       <children>
+                                          <Label fx:id="labelEncryptedText2" alignment="CENTER" prefHeight="229.0" prefWidth="287.0" text="Encrypted Text :" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold Italic" size="30.0" />
+                                             </font></Label>
+                                          <TextArea fx:id="encryptedTextArea_2" prefHeight="220.0" prefWidth="554.0" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </HBox.margin>
+                                          </TextArea>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="220.0" prefWidth="829.0">
+                                       <children>
+                                          <Label fx:id="labelDecryptedText" alignment="CENTER" prefHeight="272.0" prefWidth="289.0" text="Decrypted Text :" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold Italic" size="30.0" />
+                                             </font></Label>
+                                          <TextArea fx:id="decryptedTextArea" prefHeight="220.0" prefWidth="557.0" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets top="20.0" />
+                                             </HBox.margin>
+                                          </TextArea>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button layoutX="1395.0" layoutY="687.0" mnemonicParsing="false" onAction="#decryptButton" text="Decrypt" />
+                        <Label fx:id="labelTitleCipher" alignment="CENTER" layoutX="588.0" layoutY="39.0" prefHeight="64.0" prefWidth="578.0" text="Cipher Text Encryption" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button fx:id="backButton" layoutX="1616.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#backToMain" prefHeight="66.0" prefWidth="198.0" text="Back" />
+   </children>
+</AnchorPane>

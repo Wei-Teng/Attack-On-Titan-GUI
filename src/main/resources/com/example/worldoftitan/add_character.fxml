@@ -26,12 +26,12 @@
          <children>
             <ImageView fx:id="designImageView1" fitHeight="556.0" fitWidth="844.0" layoutX="30.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.5;">
                <image>
-                  <Image url="@../../../../../../Images/aot_trio_cute.jpg" />
+                  <Image url="@../../../../../Images/aot_trio_cute.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="designImageView2" fitHeight="815.0" fitWidth="905.0" layoutX="980.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.5;">
                <image>
-                  <Image url="@../../../../../../Images/levi_cleaner.jpg" />
+                  <Image url="@../../../../../Images/levi_cleaner.jpg" />
                </image>
             </ImageView>
             <Label layoutX="600.0" layoutY="420.0" prefHeight="100.0" prefWidth="220.0" text="Intelligence:">
@@ -180,7 +180,7 @@
             </Button>
             <ImageView fx:id="characterImageView" fitHeight="303.0" fitWidth="305.0" layoutX="100.0" onMouseClicked="#characterImageViewClicked" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../../Images/no_photo.png" />
+                  <Image url="@../../../../../Images/no_photo.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />

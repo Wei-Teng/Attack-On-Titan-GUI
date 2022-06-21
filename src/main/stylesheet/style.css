@@ -1,13 +1,11 @@
 .bg-image-blur {
-    -fx-background-image: url("file:/C:/Users/Jay%20Tan/IdeaProjects/Attack-On-Titan-GUI/Images/attack_on_titan_blur.jpg");
-    -fx-background-size: 1920px 1080px;
-    -fx-background-repeat: no-repeat;
+    -fx-background-image: url("file:/C:/Users/user/Documents/IntellijProjects/WIA%201002%20Data%20Structure/Attack-On-Titan-GUI/src/Images/attack_on_titan_blur.jpg");
+    -fx-background-size: cover;
 }
 
 .bg-image-clear {
-    -fx-background-image: url("file:/C:/Users/Jay%20Tan/IdeaProjects/Attack-On-Titan-GUI/Images/attack_on_titan_clear.jpg");
-    -fx-background-size: 1920px 1080px;
-    -fx-background-repeat: no-repeat;
+    -fx-background-image: url("file:/C:/Users/user/Documents/IntellijProjects/WIA%201002%20Data%20Structure/Attack-On-Titan-GUI/src/Images/attack_on_titan_clear.jpg");
+    -fx-background-size: cover;
 }
 
 .beige-bg-color {
@@ -22,14 +20,17 @@
     -fx-background-color: #F0F8FF;
 }
 
-.sm-label-bg {
-	-fx-background-color: #6F553F;
-    -fx-background-radius: 20px;
+.text-area{
+    -fx-control-inner-background: #D2C4AE;
+    -fx-font-family: "Lucida Console";
+    -fx-font-size: 25px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+
 }
 
 .button{
     -fx-background-color: #FFECCF;
-    -fx-background-radius: 20px;
+    -fx-background-radius: 10px;
     -fx-font-size: 30px;
     -fx-font-family: "Inter";
     -fx-font-style: normal;
@@ -37,10 +38,169 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
 }
 
-.text-area{
+#marleyWordLabel{
+    -fx-background-color: #FFECCF;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #403535;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+#paradisWordLabel{
+    -fx-background-color: #FFECCF;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #403535;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+#wordConverter{
+    -fx-background-color: #FFECCF;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #403535;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+.tab{
+    -fx-background-color:
+               linear-gradient(#FFECCF, #D2C4AE),
+               radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
+       -fx-background-radius: 6,5;
+       -fx-background-insets: 0,1;
+
+       -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+      -fx-text-fill: #395306;
+}
+
+.tab:hover
+{
+      -fx-background-color:
+                 linear-gradient(#FFECCF, #D2C4AE),
+                 radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
+         -fx-background-radius: 6,5;
+         -fx-background-insets: 0,1;
+
+         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+        -fx-text-fill: #395306;
+}
+
+.tab:pressed
+{
+     -fx-padding: 10 15 13 15;
+     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+
+}
+
+.text-field{
     -fx-control-inner-background: #D2C4AE;
     -fx-font-family: "Lucida Console";
     -fx-font-size: 25px;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+#labelTitleMarleyWord{
+    -fx-font-size: 55px;
+    -fx-font-family: "Old English Text MT";
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+#labelTitleCipher{
+    -fx-font-size: 55px;
+    -fx-font-family: "Old English Text MT";
+}
+
+#labelTitleWallofMaria{
+    -fx-font-size: 80px;
+    -fx-font-family: "Old English Text MT";
+}
+
+#confirmLayersButton{
+    -fx-background-color:
+               linear-gradient(#FFECCF, #D2C4AE),
+               radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
+       -fx-background-radius: 6,5;
+       -fx-background-insets: 0,1;
+
+       -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+      -fx-text-fill: #395306;
+}
+
+#confirmLayersButton:hover
+{
+      -fx-background-color:
+                 linear-gradient(#FFECCF, #D2C4AE),
+                 radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
+         -fx-background-radius: 6,5;
+         -fx-background-insets: 0,1;
+
+         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+        -fx-text-fill: #395306;
+}
+
+#confirmLayersButton:pressed
+{
+     -fx-padding: 10 15 13 15;
+     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+
+}
+
+#nextButton{
+    -fx-background-color:
+               linear-gradient(#FFECCF, #D2C4AE),
+               radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
+       -fx-background-radius: 6,5;
+       -fx-background-insets: 0,1;
+
+       -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+      -fx-text-fill: #395306;
+}
+
+#nextButton:hover
+{
+      -fx-background-color:
+                 linear-gradient(#FFECCF, #D2C4AE),
+                 radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
+         -fx-background-radius: 6,5;
+         -fx-background-insets: 0,1;
+
+         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+        -fx-text-fill: #395306;
+}
+
+#nextButton:pressed
+{
+     -fx-padding: 10 15 13 15;
+     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+
+}
+
+#weakestPartButton{
+    -fx-background-color:
+               linear-gradient(#FFECCF, #D2C4AE),
+               radial-gradient(center 50% -40%, radius 200%, #FFECCF 45%, #D2C4AE 50%);
+       -fx-background-radius: 6,5;
+       -fx-background-insets: 0,1;
+
+       -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+      -fx-text-fill: #395306;
+}
+
+#weakestPartButton:hover
+{
+      -fx-background-color:
+                 linear-gradient(#FFECCF, #D2C4AE),
+                 radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
+         -fx-background-radius: 6,5;
+         -fx-background-insets: 0,1;
+
+         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+        -fx-text-fill: #395306;
+}
+
+#weakestPartButton:pressed
+{
+     -fx-padding: 10 15 13 15;
+     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
 
 }
