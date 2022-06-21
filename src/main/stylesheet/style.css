@@ -1,10 +1,10 @@
 .bg-image-blur {
-    -fx-background-image: url("file:/C:/Users/e-hen/IdeaProjects/Attack-On-Titan-GUI/src/Images/attack_on_titan_blur.jpg");
+    -fx-background-image: url("file:src/main/resources/com/example/worldoftitan/Images/attack_on_titan_blur.jpg");
     -fx-background-size: cover
 }
 
 .bg-image-clear {
-    -fx-background-image: url("file:/C:/Users/e-hen/IdeaProjects/Attack-On-Titan-GUI/src/Images/mainmenubg.png");
+    -fx-background-image: url("file:src/main/resources/com/example/worldoftitan/Images/mainmenubg.png");
     -fx-background-size: cover;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .play{
-    -fx-background-image: url('file:/C:/Users/e-hen/IdeaProjects/Attack-On-Titan-GUI/Images/attack_on_titan_blur.jpg');
+    -fx-background-image: url("file:src/main/resources/com/example/worldoftitan/Images/attack_on_titan_blur.jpg");
     -fx-background-size: cover;
 }
 
