@@ -2,12 +2,12 @@ package com.example.worldoftitan;
 
 import java.util.*;
 
-public class Graph {
+public class AotGraph {
     private final int vertices;
     private final ArrayList<Boolean> vertexList;
     private final ArrayList<ArrayList<Integer>> adj;
 
-    public Graph(int vertices) {
+    public AotGraph(int vertices) {
         this.vertices = vertices;
         this.vertexList = new ArrayList<>();
         this.adj = new ArrayList<>();

@@ -100,7 +100,7 @@ public class playController implements Initializable {
     ImageView soldierImage;
     Character charButton;
     static int numOfVertices;
-    static Graph graph;
+    static AotGraph aotGraph;
     int numOfTitanAlive;
 
     @Override
@@ -228,8 +228,8 @@ public class playController implements Initializable {
         clip.setArcWidth(50);
         mapView.setClip(clip);
 
-        mapView.setImage(new Image("file:/C:/Users/e-hen/IdeaProjects/Attack-On-Titan-GUI/Images/map.jpg"));
-        pathView.setImage(new Image("file:/C:/Users/e-hen/IdeaProjects/Attack-On-Titan-GUI/Images/straightPaths.png"));
+        mapView.setImage(new Image("file:/C:/Users/e-hen/Downloads/Y1S2/DS/map.jpg"));
+        pathView.setImage(new Image("file:/C:/Users/e-hen/Downloads/Y1S2/DS/straightPaths.png"));
         soldierImage.setImage(new Image("file:/C:/Users/e-hen/Downloads/Y1S2/DS/Pictures/ErenYeager.png"));
 
         //initialize the graph
@@ -333,33 +333,33 @@ public class playController implements Initializable {
 
     private void graphInitializer(){
         numOfVertices = 16;
-        graph = new Graph(numOfVertices);
-        graph.addEdge(0,1);
-        graph.addEdge(0,5);
-        graph.addEdge(0,7);
-        graph.addEdge(1,2);
-        graph.addEdge(1,4);
-        graph.addEdge(1,6);
-        graph.addEdge(2,3);
-        graph.addEdge(2,11);
-        graph.addEdge(2,13);
-        graph.addEdge(3,10);
-        graph.addEdge(4,6);
-        graph.addEdge(4,10);
-        graph.addEdge(5,6);
-        graph.addEdge(5,7);
-        graph.addEdge(5,12);
-        graph.addEdge(6,8);
-        graph.addEdge(6,15);
-        graph.addEdge(7,9);
-        graph.addEdge(8,10);
-        graph.addEdge(9,12);
-        graph.addEdge(9,15);
-        graph.addEdge(10,14);
-        graph.addEdge(11,13);
-        graph.addEdge(13,14);
-        graph.addEdge(14,15);
-        for(int i = 0; i < 16; i++) graph.setOccupation(i,false);
+        aotGraph = new AotGraph(numOfVertices);
+        aotGraph.addEdge(0,1);
+        aotGraph.addEdge(0,5);
+        aotGraph.addEdge(0,7);
+        aotGraph.addEdge(1,2);
+        aotGraph.addEdge(1,4);
+        aotGraph.addEdge(1,6);
+        aotGraph.addEdge(2,3);
+        aotGraph.addEdge(2,11);
+        aotGraph.addEdge(2,13);
+        aotGraph.addEdge(3,10);
+        aotGraph.addEdge(4,6);
+        aotGraph.addEdge(4,10);
+        aotGraph.addEdge(5,6);
+        aotGraph.addEdge(5,7);
+        aotGraph.addEdge(5,12);
+        aotGraph.addEdge(6,8);
+        aotGraph.addEdge(6,15);
+        aotGraph.addEdge(7,9);
+        aotGraph.addEdge(8,10);
+        aotGraph.addEdge(9,12);
+        aotGraph.addEdge(9,15);
+        aotGraph.addEdge(10,14);
+        aotGraph.addEdge(11,13);
+        aotGraph.addEdge(13,14);
+        aotGraph.addEdge(14,15);
+        for(int i = 0; i < 16; i++) aotGraph.setOccupation(i,false);
     }
 //ArrayList<Titan> checkRiskList,
     private Queue<Integer> printSequence(PriorityQueue<Titan> titanPriorityQueue, Queue<Integer> sequence,boolean print){
@@ -394,8 +394,8 @@ public class playController implements Initializable {
         int position;
         do {
             position = rand.nextInt(numOfVertices);
-        }while (graph.getOccupation(position));
-        graph.setOccupation(position,true);
+        }while (aotGraph.getOccupation(position));
+        aotGraph.setOccupation(position,true);
         String typeStr;
         int type = rand.nextInt(7);
         if(type<4) typeStr = "Normal";
@@ -474,7 +474,7 @@ public class playController implements Initializable {
             int dest = 0;
             if(!sequence.isEmpty()) dest = sequence.peek();
 
-            ArrayList<Integer> list = graph.printShortestPath(source, dest);
+            ArrayList<Integer> list = aotGraph.printShortestPath(source, dest);
 
             int size = list.size();
             displayTime.offer(size-1);
@@ -534,7 +534,7 @@ public class playController implements Initializable {
     }
 //, ArrayList<Titan> checkRiskList
     private void animationCountdown(int totalDistance, Queue<Integer> displayTime, Queue<Integer> displayButton){
-        String musicFile = "C:/Users/e-hen/Downloads/Y1S2/DS/sword1.mp3";
+//        String musicFile = "C:/Users/e-hen/Downloads/Y1S2/DS/sword1.mp3";
 //        Media sound = new Media(new File(musicFile).toURI().toString());
 //        MediaPlayer mediaPlayer = new MediaPlayer(sound);
 //        mediaPlayer.setVolume(0.1);
