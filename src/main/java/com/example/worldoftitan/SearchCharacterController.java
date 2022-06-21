@@ -26,10 +26,10 @@ public class SearchCharacterController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        File picture1 = new File("C:\\Users\\Admin\\IdeaProjects\\WorldOfTitan\\Images\\aot_trio_cute.jpg");
+        File picture1 = new File("/Images/aot_trio_cute.jpg");
         designImageView1.setImage(new Image(picture1.toURI().toString()));
 
-        File picture2 = new File("C:\\Users\\Admin\\IdeaProjects\\WorldOfTitan\\Images\\levi_cleaner.jpg");
+        File picture2 = new File("/Images/levi_cleaner.jpg");
         designImageView2.setImage(new Image(picture2.toURI().toString()));
 
         attributeChoiceBox.setItems(FXCollections.observableArrayList("Strength", "Agility",

@@ -1,7 +1,7 @@
 package com.example.worldoftitan;
 
 import com.example.worldoftitan.sql.Sql;
-import javafx.embed.swing.SwingFXUtils;
+//import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
@@ -47,13 +47,13 @@ public class AddCharacterController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        File defaultCharacterPicture = new File("C:\\Users\\Admin\\IdeaProjects\\WorldOfTitan\\Images\\no_photo.png");
+        File defaultCharacterPicture = new File("/Images/no_photo.png");
         characterImageView.setImage(new Image(defaultCharacterPicture.toURI().toString()));
 
-        File picture1 = new File("C:\\Users\\Admin\\IdeaProjects\\WorldOfTitan\\Images\\aot_trio_cute.jpg");
+        File picture1 = new File("/Images/aot_trio_cute.jpg");
         designImageView1.setImage(new Image(picture1.toURI().toString()));
 
-        File picture2 = new File("C:\\Users\\Admin\\IdeaProjects\\WorldOfTitan\\Images\\levi_cleaner.jpg");
+        File picture2 = new File("/Images/levi_cleaner.jpg");
         designImageView2.setImage(new Image(picture2.toURI().toString()));
     }
 
@@ -132,8 +132,8 @@ public class AddCharacterController implements Initializable {
         try {
             selectedImagePath = picturePath.toString().replace("\\", "/");
             BufferedImage bufferedImage = ImageIO.read(picturePath);
-            Image image = SwingFXUtils.toFXImage(bufferedImage, null);
-            characterImageView.setImage(image);
+//            Image image = SwingFXUtils.toFXImage(bufferedImage, null);
+//            characterImageView.setImage(image);
         } catch (IOException e) {
             AlertContainer.showWarningAlert("It is not a valid image.");
         }

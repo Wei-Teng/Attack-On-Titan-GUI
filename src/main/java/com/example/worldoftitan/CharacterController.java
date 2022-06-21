@@ -75,6 +75,7 @@ public class CharacterController implements Initializable {
             anchorPane.getChildren().addAll(characterImageView, nameLabel, heightLabel, weightLabel, strengthLabel,
                     agilityLabel, intelligenceLabel, coordinationLabel, leadershipLabel, removeButton, emptyLabel);
             vbox.getChildren().add(anchorPane);
+
         }
     }
 

@@ -11,6 +11,7 @@ public class Sql {
         connection = SqlConnector.getConnection();
     }
 
+
     public void createCharacterTableIfNotExist() {
         try {
             tryToCreateCharacterTable();
