@@ -26,12 +26,12 @@
          <children>
             <ImageView fx:id="designImageView1" fitHeight="556.0" fitWidth="844.0" layoutX="30.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.5;">
                <image>
-                  <Image url="@../../../../../../Images/aot_trio_cute.jpg" />
+                  <Image url="@../../../../../Images/aot_trio_cute.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="designImageView2" fitHeight="815.0" fitWidth="905.0" layoutX="980.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.5;">
                <image>
-                  <Image url="@../../../../../../Images/levi_cleaner.jpg" />
+                  <Image url="@../../../../../Images/levi_cleaner.jpg" />
                </image>
             </ImageView>
             <Label alignment="CENTER" layoutX="550.0" layoutY="100.0" prefHeight="100.0" prefWidth="338.0" text="Choose Attributes:">

@@ -33,7 +33,7 @@ public class StartController implements Initializable {
 
     @FXML
     void btnMarleyWordClicked(MouseEvent event) {
-
+        ViewInteractor.openScene("marley_word.fxml");
     }
 
     @FXML
@@ -53,6 +53,6 @@ public class StartController implements Initializable {
 
     @FXML
     void btnWallOfMariaClicked(MouseEvent event) {
-
+        ViewInteractor.openScene("wall_of_maria.fxml");
     }
 }
