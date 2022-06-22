@@ -22,9 +22,6 @@ import javafx.scene.shape.MoveTo;
 import javafx.scene.shape.Path;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
-//import javafx.scene.media.Media;
-//import javafx.scene.media.MediaPlayer;
-//import javax.print.attribute.standard.Media;
 
 import java.io.File;
 import java.net.URL;
@@ -175,13 +172,15 @@ public class playController implements Initializable {
             charInfo1.setText(c.toString());
             charInfo1.setStyle(
                     "-fx-background-color: transparent;"+
-                    "-fx-text-fill: #403535;"
+                    "-fx-text-fill: #403535;" +
+                    "-fx-font-size: 20px;"
             );
             Label charInfo2 = new Label();
             charInfo2.setText(c.toString2());
             charInfo2.setStyle(
                     "-fx-background-color: transparent;"+
-                    "-fx-text-fill: #403535;"
+                    "-fx-text-fill: #403535;" +
+                    "-fx-font-size: 20px;"
             );
 
             frame.getChildren().addAll(imageView, charInfo1, charInfo2);
@@ -250,10 +249,8 @@ public class playController implements Initializable {
 
         //newTitan queue (store the node of new titans - when they appear)
         Queue<Titan> newTitanButton = new LinkedList<>();
-        //List for checking if soldier should run
-//        ArrayList<Titan> checkRiskList = new ArrayList<>();
 
-        Queue<String> newTitanSequence = new LinkedList<>();
+//        Queue<String> newTitanSequence = new LinkedList<>();
 
         //first position
         sequence.add(0);
@@ -266,7 +263,8 @@ public class playController implements Initializable {
                 sequenceDisplay.setText(sequenceOutput.toString());
                 printSequence(titanPriorityQueue,sequence,true);
             }
-            else if((i+1)%3==0){ //every third initial titans will spawn a new titan
+            else if((i+1)%3==0){
+                //every third initial titans will spawn a new titan
                 if(!titanPriorityQueue.isEmpty()) sequence.offer(titanPriorityQueue.poll().getPosition());
                 //generate new titan in the middle of the fight
                 sequenceOutput.append("\nNew sequence:\n");
@@ -361,30 +359,22 @@ public class playController implements Initializable {
         aotGraph.addEdge(14,15);
         for(int i = 0; i < 16; i++) aotGraph.setOccupation(i,false);
     }
-//ArrayList<Titan> checkRiskList,
     private Queue<Integer> printSequence(PriorityQueue<Titan> titanPriorityQueue, Queue<Integer> sequence,boolean print){
         PriorityQueue<Titan> pq = new PriorityQueue<>(titanPriorityQueue);
         Queue<Integer> seq = new LinkedList<>(sequence);
 
         StringBuilder sequenceOutput = new StringBuilder();
         sequenceOutput.append(sequenceDisplay.getText());
-//        boolean flag = false;
-//        int count = 0;
+
         while (!pq.isEmpty()) {
             Titan titan = pq.poll();
-//            if(print && !flag){
-//                checkRiskList.add(titan);
-//                flag = true;
-//            }else if (!print && count>0) {
-//                checkRiskList.add(titan);
-//            }
+
             assert titan != null : "Titan is null";
             if (pq.isEmpty()) {
                 sequenceOutput.append("Titan ").append(titan.getIndex());
             } else sequenceOutput.append("Titan ").append(titan.getIndex()).append(" --> ");
             if(print) sequenceDisplay.setText(sequenceOutput.toString());
             seq.offer(titan.getPosition());
-//            count++;
         }
         return seq;
     }
@@ -532,33 +522,21 @@ public class playController implements Initializable {
         }
         return totalDistance;
     }
-//, ArrayList<Titan> checkRiskList
+
     private void animationCountdown(int totalDistance, Queue<Integer> displayTime, Queue<Integer> displayButton){
-//        String musicFile = "C:/Users/e-hen/Downloads/Y1S2/DS/sword1.mp3";
-//        Media sound = new Media(new File(musicFile).toURI().toString());
-//        MediaPlayer mediaPlayer = new MediaPlayer(sound);
-//        mediaPlayer.setVolume(0.1);
         int count = 0;
-//        int index = 0;
+
         for(int i = 0; i <= totalDistance; i++){
             try {Thread.sleep(1000);}catch (InterruptedException e) {throw new RuntimeException(e);}
 
             if(!displayTime.isEmpty() && displayTime.peek()==count){
                 displayTime.poll();
-//                int risk = checkRiskList.get(index).getRisk();
-//                int soldierPower = charButton.getAgility()+charButton.getStrength();
-//                if(risk <= soldierPower){
-                    //play killing audio
-//                    mediaPlayer.seek(Duration.ZERO);
-//                    mediaPlayer.play();
 
                     int buttonNum = 0;
                     if(!displayButton.isEmpty()) buttonNum = displayButton.poll();
                     String buttonStyle = "-fx-background-color: #457439";
                     recolourButton(buttonNum,buttonStyle);
-//                }
                 count = 0;
-//                index++;
             }
             count++;
         }
